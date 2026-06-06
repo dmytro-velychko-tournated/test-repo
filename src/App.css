@@ -182,3 +182,25 @@
     border-right-color: var(--border);
   }
 }
+
+/* Theme toggle */
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.theme-toggle {
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #888;
+  padding: 0.4rem 0.8rem;
+  font: inherit;
+  background: transparent;
+  color: inherit;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+}
